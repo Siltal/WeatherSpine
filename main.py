@@ -84,8 +84,8 @@ def getWeaData(address):
     if not temp:
         return "查询失败！",["HAIL","HEAVY_HAZE","STORM_SNOW","HEAVY_HAZE","HAIL"],[100,0,100,0,100],[0,100,0,100,0],[6,6,6,6,6]
     x,y=temp
-    # r = requests.get('https://www.tianqiapi.com/api?version=v1&appid=22688751&appsecret=1FBjE3aD&city=%s' % address)
-    r=requests.get("https://api.caiyunapp.com/v2/vXrEEGJlGcyJBmmj/%s,%s/forecast.json"%(x,y))
+    # r = requests.get('https://www.tianqiapi.com/api?version=v1&appid=22688751&appsecret=xxxxxxx&city=%s' % address)
+    r=requests.get("https://api.caiyunapp.com/v2/XXXXXXXXXXXXXX/%s,%s/forecast.json"%(x,y))
     r.encoding = "utf-8"
     day5temMax=[]
     day5temMin=[]
